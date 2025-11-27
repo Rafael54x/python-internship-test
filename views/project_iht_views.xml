@@ -1,0 +1,18 @@
+<odoo>
+    <record id="view_project_iht_form" model="ir.ui.view">
+        <field name="name">project.iht.form</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//group[@name='project_info']" position="after">
+                <group string="IHT Custom Fields">
+                    <field name="lokasi_proyek"/>
+                    <field name="source_aplikasi_pendukung"/>
+                    <field name="daftar_pekerja_remote"/>
+                </group>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>
